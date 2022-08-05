@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main{
+      background-color: orange;
+      width: 400px;
+      height: 300px;
+      position: relative;
+    }
+    .photo{
+      width: 150px;
+      height: 120px;
+      border-radius: 20%;
+      position:absolute;
+    }
+    .a{
+      background-image: url("./사진1.jpg");
+      background-size: cover;
+      top: 3%;
+      left: 10%;
+    }
+    .b{
+      background-image: url("./사진2.jpg");
+      background-size: cover;
+      top: 3%;
+      right: 10%;
+    }
+    .c{
+      background-image: url("./사진3.jpg");
+      background-size: cover;
+      bottom: 3%;
+      left: 10%;
+    }
+    .d{
+      background-image: url("./사진4.jpg");
+      background-size: cover;
+      bottom: 3%;
+      right: 10%;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="photo a"></div>
+    <div class="photo b"></div>
+    <div class="photo c"></div>
+    <div class="photo d"></div>
+  </div>
+</body>
+</html>

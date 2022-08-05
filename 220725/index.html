@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .problem2{
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }      
+        header{
+            border: 1px solid gray;
+            background-color: gray;
+            text-align: center;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }    
+        .bugger-icon{
+            border: 1px solid gray;
+            border-radius: 50%;
+            background-image: url(./햄버거\ 아이콘.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        
+        /*menu 1 박스*/
+        .menu1{
+            display: flex;
+            justify-content: center;
+        }
+        .menu1-img{
+            background-image: url(./햄버거.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 200px;
+        }
+        .menu1-container{
+            border: 1px solid gray;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .menu1-box{
+            border: 1px solid gray;
+            color: white;
+            background-color: darkslategrey;
+            width: 98%;
+            height: 25px;
+            text-align: center;
+            padding-bottom: 50px;
+            margin-top: -5px;
+        }
+        .menu1-textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50%;
+        }
+        .menu1-text{
+            text-align: center;
+        }
+
+        /*menu 2박스*/
+        .menu2{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .menu2-img{
+            background-image: url(./햄버거2.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 300px;
+            height: 200px;
+            margin-left: 30px;
+        }
+        .menu2-container{
+            border: 1px solid gray;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            margin-left: 30px;
+        }
+        .menu2-box{
+            border: 1px solid gray;
+            color: white;
+            background-color: darkslategrey;
+            width: 98%;
+            height: 25px;
+            text-align: center;
+            padding-bottom: 50px;
+            margin-top: 5px;
+        }
+        .menu2-textbox{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 50%;
+        }
+        .menu2-text{
+            text-align: center;
+        }
+        .a{
+            margin-bottom: -25px;
+        }
+
+
+
+ /* 액자 만들기 */
+
+        .problem3{
+            border: 1px solid black;
+            width: 1100px;
+            height: 700px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 12px 12px 12px 2px gray;
+            border-radius: 2%;
+        }
+        .p3-img{
+            background-image: url(./산.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 95%;
+            height: 95%;
+        }
+        
+
+    </style>
+</head>
+<body>
+<div class="problem2">
+    <header>
+        <h2>KFC World</h2>
+    </header>
+    <nav>
+        <div class="bugger-icon"></div>
+        <div><h2>메뉴판</h2></div>
+    </nav>
+    <main>
+        <div class="menu1">
+            <div class="menu1-img"></div>
+            <div class="menu1-container">
+                <div class="menu1-box"> <h2>Fire Bugger</h2></div>
+                <div class="menu1-textbox">
+                    <div class="menu1-text a"><h2>맵지않습니다.</h2></div>
+                    <div class="menu1-text b"><h2>다만 뜨거운 불타는 버거</h2></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu2">
+            <div class="menu2-img"></div>
+            <div class="menu2-container">
+                <div class="menu2-box"> <h2>Degda Bugger</h2></div>
+                    <div class="menu2-texbox">
+                        <div class="menu2-text"><h2>하나의 가격으로</h2></div>
+                        <div class="menu2-text"><h2>3개의 버거를 먹는 재미</h2></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<div class="problem3">
+    <div class="p3-img"></div>
+</div>
+</body>
+</html>

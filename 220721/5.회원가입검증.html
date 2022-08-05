@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      아이디 <input id="id" type="text" /> 비밀번호
+      <input id="password" type="password" />
+
+      <!-- form 안에서는 type을 기입하지 않으면 input type=submit처럼 동작 -->
+      <button type="button" id="signup">회원가입</button>
+    </form>
+
+    <script>
+      const id = document.querySelector("#id");
+      const password = document.querySelector("#password");
+      const signupButton = document.querySelector("#signup");
+      //값이 들어왔을때 검증해야되는게 "" 빈값뿐만 아니라
+      //undefined, null 까지 모두 검증해야한다.
+      signupButton.addEventListener("click", function () {
+        console.log("클릭 되냐?");
+        console.log("id.value");
+        console.log("password.value");
+        if (id.value !== "" && password.value !== "") {
+          alert("회원가입이 완료됐습니다!");
+        } else {
+          //id가 비었는지
+          if (id.value === "") {
+            alert("아이디가 비어있습니다!");
+          }
+          //password가 비었는지
+          if (password.value === "") {
+            alert("패스워드가 비어있습니다!");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
